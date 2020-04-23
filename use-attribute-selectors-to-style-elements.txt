@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
-  .silver-background{
-    background-color: silver;
+  [type='checkbox']{
+    margin: 10px 0px 15px;
   }
   .red-text {
     color: red;
@@ -26,6 +26,10 @@
   .smaller-image {
     width: 100px;
   }
+
+  .silver-background {
+    background-color: silver;
+  }
 </style>
 
 <h2 class="red-text">CatPhotoApp</h2>
@@ -49,7 +53,7 @@
     </ol>
   </div>
 
-  <form action="/submit-cat-photo">
+  <form action="/submit-cat-photo" id="cat-photo-form">
     <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
     <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
     <label><input type="checkbox" name="personality" checked> Loving</label>
